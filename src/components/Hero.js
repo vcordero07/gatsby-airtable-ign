@@ -4,7 +4,21 @@ import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 const Hero = () => {
   return (
-    <h2>hero component</h2>
+    <Wrapper>
+      <StaticImage
+        src='../images/mainBcg6.jpg'
+        layout='fullWidth'
+        className='img'
+        alt='printed textile'
+      />
+      <div className='info'>
+        <article>
+          <h3>Trailblazing design excellency</h3>
+          <h1>tattooed chicharrones aesthetic</h1>
+          <Link to='/projects'>projects</Link>
+        </article>
+      </div>
+    </Wrapper>
   )
 }
 
