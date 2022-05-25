@@ -1,13 +1,29 @@
 import React, { useContext } from 'react'
 import styled from 'styled-components'
-import logo from '../images/logo.svg'
+import logo from '../images/logo.png'
 import { GoThreeBars } from 'react-icons/go'
 import { Link } from 'gatsby'
 import NavLink from './NavLink'
 import { GatsbyContext } from '../context/context'
 const Navbar = () => {
   return (
-   <h2>navbar component</h2>
+    <Wrapper>
+      <div className='nav-center'>
+        <div className='nav-header'>
+          <Link to='/'>
+            <img src={logo} alt='logo ethos designs' />
+          </Link>
+          <button className='toggle-btn'>
+            <GoThreeBars />
+          </button>
+        </div>
+        <ul className='nav-links'>
+          <li>products</li>
+          <li>developers</li>
+          <li>company</li>
+        </ul>
+      </div>
+    </Wrapper>
   )
 }
 
@@ -42,6 +58,7 @@ const Wrapper = styled.nav`
       border: transparent;
       color: var(--clr-white);
       background: var(--clr-primary-5);
+      /* background: #f4a460; */
       cursor: pointer;
       transition: var(--transition);
       &:hover {

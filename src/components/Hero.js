@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <Wrapper>
       <StaticImage
-        src='../images/mainBcg6.jpg'
+        src='../images/mainBcg.jpg'
         layout='fullWidth'
         className='img'
         alt='printed textile'
