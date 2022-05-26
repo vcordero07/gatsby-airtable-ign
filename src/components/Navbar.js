@@ -86,6 +86,7 @@ const Wrapper = styled.nav`
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       max-width: 500px;
+      color: white;
     }
     li {
       padding: 1rem 0;
