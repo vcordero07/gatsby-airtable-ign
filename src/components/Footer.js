@@ -8,7 +8,7 @@ const Footer = () => {
         copyright &copy; {new Date().getFullYear()}|{' '}
         <span>
           <Link to='/' className='footer-slug'>
-            <span>CatDev</span>
+            <span>ethos-design</span>
           </Link>
         </span>{' '}
         | all rights reserved
@@ -29,6 +29,9 @@ const Wrapper = styled.footer`
     @media (max-width: 576px) {
       font-size: 0.75rem;
     }
+  }
+  .footer-slug {
+    color: var(--clr-primary-5);
   }
 `
 export default Footer
