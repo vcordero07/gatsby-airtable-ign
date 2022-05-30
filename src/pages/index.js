@@ -9,6 +9,7 @@ import {
   Slider,
   GridProjects,
 } from '../components'
+import SEO from '../components/SEO'
 
 const HomePage = ({ data }) => {
   const {
@@ -16,13 +17,16 @@ const HomePage = ({ data }) => {
     customers: { nodes },
   } = data
   return (
-    <Layout>
-      <Hero />
-      <About />
-      <Projects projects={projects} title='latest projects' />
-      <Survey />
-      <Slider customers={nodes} />
-    </Layout>
+    <>
+      <SEO title='Home' />
+      <Layout>
+        <Hero />
+        <About />
+        <Projects projects={projects} title='latest projects' />
+        <Survey />
+        <Slider customers={nodes} />
+      </Layout>
+    </>
   )
 }
 

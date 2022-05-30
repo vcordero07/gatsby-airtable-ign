@@ -4,12 +4,12 @@ require('dotenv').config({
 // const queries = require("./src/constants/algolia")
 module.exports = {
   siteMetadata: {
-    title: `Design Shop`,
-    description: `Gatsby Airtable Site`,
+    title: `ethos-design`,
+    description: `Tattooed Chicharrones Aesthetic - Gatsby Airtable Site`,
     author: `@vcordero07`,
-    titleTemplate: `%s | Gatsby - Airtable`,
-    url: ``,
-    image: `mainBcg.png`,
+    titleTemplate: `%s | ethos-design`,
+    url: `https://ethos-design.netlify.app`,
+    image: `mainBcg.jpg`,
     twitterUsername: `@vcordero07`,
   },
   plugins: [
