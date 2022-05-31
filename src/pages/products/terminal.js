@@ -4,11 +4,11 @@ import styled from 'styled-components'
 import { Link } from 'gatsby'
 import SEO from '../../components/SEO'
 
-const Payments = (props) => {
+const Terminal = (props) => {
   const path = props.location.pathname.slice(1)
   return (
     <>
-      <SEO title='Payments' />
+      <SEO title='Terminal' />
       <Layout>
         <Wrapper>
           <div>
@@ -46,4 +46,4 @@ const Wrapper = styled.main`
   }
 `
 
-export default Payments
+export default Terminal
